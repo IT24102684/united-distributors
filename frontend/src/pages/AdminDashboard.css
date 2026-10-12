@@ -1,0 +1,77 @@
+/* Product image upload area */
+.product-admin-form .product-image-upload {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 8px 0;
+}
+
+/* Upload box */
+.product-admin-form .image-upload-box {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  padding: 20px;
+  background: #f8fafc;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Content inside upload box */
+.product-admin-form .upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 90px;
+}
+
+.product-admin-form .upload-icon {
+  font-size: 28px;
+}
+
+.product-admin-form .upload-content strong {
+  display: block;
+  font-size: 15px;
+}
+
+.product-admin-form .upload-content span:not(.upload-icon) {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.product-admin-form .upload-content small {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Selected image preview */
+.product-admin-form .image-preview {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-admin-form .image-preview img {
+  width: 120px !important;
+  height: 120px !important;
+  max-width: 120px !important;
+  object-fit: contain;
+  display: block;
+  padding: 5px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+/* Prevent price and stock inputs becoming tall */
+.product-admin-form input[type="number"] {
+  height: 48px;
+  min-height: 48px;
+  align-self: start;
+  box-sizing: border-box;
+}
+

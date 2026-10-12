@@ -1,0 +1,32 @@
+# Frontend
+node_modules/
+dist/
+.vite/
+
+# Backend
+target/
+build/
+.gradle/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+application-secret.properties
+
+# Uploaded files
+uploads/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS and logs
+.DS_Store
+Thumbs.db
+*.log
+
+# Protect database credentials
+/backend/src/main/resources/application.properties
